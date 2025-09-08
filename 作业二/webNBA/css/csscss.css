@@ -1,0 +1,317 @@
+/* 重置样式 */
+*{
+  margin: 20px;;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 为所有元素设置默认的外边距和内边距为0，设置盒模型为边框盒模型 */
+
+p {
+  text-indent: 2em; /* 第一段首行缩进 */
+}
+.h
+{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.headder h1
+{
+    font-size: 90px;
+    font-weight: 1000;
+    font-family: kaiti;
+    color:  #f6b70a;
+    text-align:center;
+}
+
+.headder h2
+{
+    font-size: 40px;
+    font-weight: 300;
+    font-family: fantasy;
+    color: #f6b70a;
+    text-align: end;
+}
+
+body {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei UI', 'Microsoft YaHei', 'Source Han Sans CN', sans-serif;
+  background-image: url('NBA.jpg');
+  color: #333;
+  text-align: justify;
+  line-height: 1.4;
+}
+/* 设置页面字体、背景图片、文字颜色、文本对齐方式以及行高 */
+
+/* 图片轮播样式 */
+.loop {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  flex-wrap: nowrap; /* 不允许换行 */
+  margin: 20px 0; /* 上下边距 */
+  height: 100%; /* 确保容器高度 */
+}
+/* 设置图片轮播的弹性布局、内容对齐、换行、间距、外边距和高度 */
+
+.loop img {
+  width: 90%; /* 图片宽度，确保总宽度不超过100% */
+  height: auto; /* 高度自动调整以保持图片比例 */
+  object-fit: contain; /* 图片按比例缩放并完全包含在容器内 */
+  border-radius: 5px; /* 图片圆角 */
+}
+/* 设置图片轮播中的图片宽度、高度、缩放方式和边框圆角 */
+
+a {
+  text-decoration: none;
+  color: #0645AD;
+  font-weight: bold;
+}
+/* 设置超链接的默认样式，去除下划线，设置颜色和字体粗细 */
+
+a:hover {
+  text-decoration: underline;
+}
+/* 设置鼠标悬停在超链接上时的样式，添加下划线 */
+
+/* 头部样式 */
+.header {
+  background: #f6b70a;
+  color: #fff;
+  padding: 0 20px;
+}
+/* 设置头部的背景颜色、文字颜色和内边距 */
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+/* 设置导航菜单的样式，去除列表样式，使用弹性布局居中对齐，设置高度 */
+
+.nav li {
+  margin: 0 10px;
+}
+/* 设置导航菜单列表项的外边距 */
+
+.nav li a {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+/* 设置导航菜单中链接的颜色、内边距、边框圆角和背景颜色变化的过渡效果 */
+
+.nav li a:hover {
+  background-color: #FF6633;
+}
+/* 设置鼠标悬停在导航菜单链接上时的背景颜色 */
+
+/* 内容区域样式 */
+.con {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+}
+/* 设置内容区域的内边距和背景颜色 */
+
+.con_t {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* 设置内容标题区域的弹性布局和外边距 */
+
+.pic {
+  flex: 1;
+  margin-right: 20px;
+}
+/* 设置图片区域的弹性比例和外边距 */
+
+.pic img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: #fff;
+}
+/* 设置图片的最大宽度、高度、边框、内边距和背景颜色 */
+
+.text {
+  flex: 3;
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* 设置文本区域的弹性比例 */
+
+.title {
+  font-size: 34px;
+  color: #950304;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #950304;
+}
+/* 设置标题的字体大小、颜色、外边距和下边框 */
+
+.players_box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+/* 设置选手盒子的弹性布局、换行、内容分布、列表样式和内边距 */
+
+.players_box li {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* 设置选手盒子列表项的宽度、文本对齐和外边距 */
+
+.players_box li .pic {
+  width: 80%;
+  margin: 0 auto 10px;
+}
+/* 设置选手盒子中的图片宽度、外边距 */
+
+.players_box li img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+/* 设置选手盒子中的图片宽度、高度和变换的过渡效果 */
+
+.players_box li img:hover {
+  transform: scale(1.1);
+}
+/* 设置鼠标悬停在选手盒子中的图片上时的缩放效果 */
+
+.players_box li p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+/* 设置选手盒子中的段落字体大小、颜色和外边距 */
+
+.players_box li a {
+  display: inline-block;
+  background: #FFCC33;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+/* 设置选手盒子中的链接显示方式、背景颜色、文字颜色、内边距和边框圆角以及背景颜色变化的过渡效果 */
+
+.players_box li a:hover {
+  background-color: #FFAA00;
+}
+/* 设置鼠标悬停在选手盒子中的链接上时的背景颜色 */
+
+.rules img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+/* 设置规则区域的图片最大宽度、高度和外边距 */
+.center_table, th, td
+{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+ } 
+
+ .center_table {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 80%;
+  background: url('MVP.jpg') no-repeat center center; /* 设置背景图片 */
+  background-size: cover;
+  position: relative; /* 为背景图片设置相对定位 */
+}
+
+.center_table > tbody > tr > td, .center_table > tbody > tr > th, .center_table > thead > tr > td, .center_table > thead > tr > th {
+  background-color: rgba(255, 255, 255, 0.6); /* 设置单元格背景颜色 */
+  position: relative; /* 确保背景图片在单元格之下 */
+}
+
+ caption
+ {
+    font-size: 50px;
+    font-weight: bold;
+
+ }
+th
+{
+  height:50px;
+}
+/* 行高度设置 */
+td
+{   
+    width: 20%;
+    text-align:left;
+}
+/* 水平对齐方式 */
+
+.three-column-list {
+  column-count: 3; /* 设置列数为2 */
+  column-gap: 20px; /* 设置列间距 */
+  list-style-type: disc; /* 列表样式 */
+  padding-left: 20px;
+}
+
+.three-column-list li {
+  break-inside: avoid; /* 避免列表项在列间断开 */
+  margin-bottom: 10px;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+details[open] summary {
+  color: #333;
+}
+
+details p {
+  margin-top: 0;
+}
+
+.tit li
+{
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: brown;
+}
+
+.shotball
+{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.shotball p
+{
+    font-size: 21px;
+
+}
+footer {
+  background: #f6b70a;
+  color: #fff;
+  text-align: center;
+  padding: 1px 0;
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nopoint li
+{
+    list-style: none;
+}
+/* 设置页脚的背景颜色、文字颜色、文本对齐和内外边距 */
+
