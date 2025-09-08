@@ -1,0 +1,38 @@
+// 初始化图表实例
+option = {
+  title: {
+    text: 'Stephen Curry'
+  },
+  legend: {
+    data: ['Stephen Curry', 'Average']
+  },
+  radar: {
+    indicator: [
+      { name: '得分（33.6）', max: 33.6 },
+      { name: '盖帽（3.6）', max: 3.6 },
+      { name: '抢断（2.1）', max: 2.1 },
+      { name: '助攻（10.9）', max: 10.9 },
+      { name: '篮板（13.7）', max: 13.7 }
+    ]
+  },
+  series: [
+    {
+      type: 'radar',
+      label: {
+        show: true, // 显示数据标注
+        formatter: '{c}' // 显示具体的数值
+      },
+      data: [
+        {
+          value: [26.4, 0.4, 0.7, 5.1, 4.5],
+          name: 'Stephen Curry'
+        },
+        {
+          value: [8.0, 0.4, 0.6, 1.9, 3.2],
+          name: 'Average'
+        }
+      ]
+    }
+  ]
+};
+
